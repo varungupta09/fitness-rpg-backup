@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.js" defer></script>
+    <title>Exercise Log</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title-and-goals">
+            <h1 class="title" id="title">
+                EXERCISE LOG
+            </h1>
+            <h3> Track your progress here!</h3>
+        </div>
+        <br>
+        <div class="general-information" id="general-information">
+            <h2>General Information</h2>
+            <br>
+            <br>
+            <label for="date">
+                Date  <input type="text" id="date">
+             </label>
+             <label for="body-weight">
+                 Body weight (in lbs)  <input type="text" id="body-weight">
+              </label>
+              <label for="sleep">
+                 Sleep (in hrs) <input type="text" id="sleep">
+              </label>
+        </div>
+        <br><br>
+        <div class="general-information2" id="general-information2">
+            <label for="calories">
+                Calories (in kcal)  <input type="text" id="calories">
+             </label>
+             <label for="day">
+                Day of the week <input type="text" id="day">
+             </label>
+        </div>
+        <br>
+        <div class="save" id="save">
+            <br>
+            <input type="button" value="Save" id="save-button"></button>
+            <div class="gen-info" id="gen-info">
+                
+            </div>
+        </div>
+        <br>
+        <div class="inputs"  id="inputs">
+            <h1> Save up to 10 exercises per day.</h1>
+            <label for="exercise">
+                Exercise <input type="text" id="exercise">
+             </label>
+             <label for="weight">
+                 Weight (lbs) <input type="text" id="weight">
+              </label>
+              <label for="set-1">
+                 Set 1 <input type="text" id="set-1">
+              </label>
+        </div>
+        <br>
+        <br>
+        <div class="inputs"  id="inputs">
+            <label for="set-2">
+                Set 2 <input type="text" id="set-2">
+             </label>
+             <label for="set-3">
+                Set 3 <input type="text" id="set-3">
+             </label>
+             <label for="set-4">
+               Set 4 <input type="text" id="set-4">
+            </label>
+        </div>
+        <br>
+        <div class="add-create-and-reset" id="add-create-and-reset">
+            <br>
+            <input type="button" value="Add" id="add-button" ></button>
+            <input type="button" value="Create" id="create-button" ></button>
+            <input type="button" value="Reset All" id="reset-button" ></button>
+            <div class="workouts" id="workouts">
+            </div>    
+        </div>
+        <br>
+        <div class="display-all" id="display-all">
+            <br>
+            <div class="display-log"  id="display-log">
+                <div id="log-number" >
+                    <label for="log-id">Log #
+                        <input type="text"  id="log-id">
+                    </label>
+                    
+                </div>
+                <br>
+                <br>
+                <input type="button" value="Display"  id="display-button"></button>
+                <input type="button" value="Update Log"  id="update-button"></button>
+                <input type="button" value="Delete Log" id="delete-button"></button>
+                <input type="button" value="Delete All Logs"  id="delete-all-button"></button>
+            </div>
+            <br>
+            <input type="button" value="Display All"  id="display-all-button"></button>
+        </div>
+
+
+    </div>
+</body>
+</html>

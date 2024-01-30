@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitness RPG</title>
+    <script src="//cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
+    
+    <script type="module" src="./client/workOut/workoutButton.js" defer></script>
+    <script type="module" src="./client/missions/myMission.js" defer></script>
+     <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+  <body>
+    <header class="header-wrapper">
+
+			<div class="internal-wrapper"> 
+				<div class="header-links-wrapper">
+					<ul>
+						<li><a href="#">FITNESS RPG</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="./client/workOut/workout.html">Workouts</a></li>
+						<li><a href="./client/ach/ach.html">Achievements</a></li>
+            <div class="user-circle" onclick="window.location.href='./client/login/login.html'">
+              <!-- User photo or initials here -->
+              <img
+              src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+              alt="Profile Picture"
+              class="profile-pic"
+              width="50"
+              height="20"
+              />
+          </div>
+					</ul>					
+				</div>
+      </div>
+    </header>
+<!-- SECOND -->
+    <section class="second-hightlight-wrapper">
+				<div class="title-wraper">
+
+          <div class="leftt-side-wrapper">
+					  <h3> EXERCISE IN</h3>
+            <h3>A NEW WAY</h3>
+			    </div>
+
+				</div> 
+
+		</section>
+<!-- Third -->
+    <section class="third-highlight-wrapper">
+      <div class="left-side-wrapper">
+         <div class="box">
+            <h3>CREATE YOUR </h3>
+            <h3> OWN WORKOUT</h3>
+          </div>
+        <button id="workout-button" onclick="window.location.href='./client/workOut/workout.html'">Create</button>
+			</div>
+
+			<div class="right-side-wrapper">
+      </div>	
+		</section>
+
+    <div id="workout-popup" class="workout-popup-wrapper">
+      <div class="workout-popup-content">
+        <h4>Select a workout:</h4>
+        <select id="workout-options">
+          <option value="push-up">Push-Ups</option>
+          <option value="squat">Squats</option>
+          <option value="plank">Plank</option>
+        </select>
+        <button id="workout-submit">Submit</button>
+      </div>
+    </div>
+    <!-- Fourth -->
+    <section class="fourth-highlight-wrapper">
+      <div class="left-side-wrapper">
+         
+			</div>
+
+			<div class="rightt-side-wrapper">
+        <div class="box">
+            <h3>SAVE YOUR </h3>
+            <h3>PROGRESS</h3>
+          </div>
+        <button id="ex-logs-button" onclick="window.location.href='./client/exercise_log/index.html'">Go to Logs</button>
+      </div>	
+		</section>
+
+    <!-- Fifth -->
+    <section class="fifth-highlight-wrapper">
+      <div class="left-side-wrapper">
+         <div class="box">
+            <h3>START A </h3>
+            <h3> MISSION </h3>
+          </div>
+        <button id="start-button" onclick="window.location.href='./client/missions/myMission.html'">Start</button>
+     
+			</div>
+
+			<div class="right-side-wrapper">
+      </div>	
+		</section>
+  </body>
+</html>

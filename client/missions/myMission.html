@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Missions Page</title>
+    <link rel="stylesheet" type="text/css" href="myMission.css" />
+    <script src="//cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
+    <script type="module" src="myMission.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <!-- <li><a href="#">Workouts</a></li>
+        <li><a href="about.html">About</a></li> -->
+      </ul>
+    </nav>
+    <h1>Missions Page</h1>
+    <div class="container">
+      <form id="addMissionForm">
+        <h2>Create Mission</h2>
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" class="title" required />
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" class="title" required />
+        <label for="description">Description:</label>
+        <textarea
+          class="description"
+          id="description"
+          name="description"
+          required
+        ></textarea>
+        <button id="miss-button">Add Mission</button>
+        <button id="del-button">Delete all my Missions</button>
+        <button id="up-button">Update a Mission</button>
+        <button id="onedel-button">Delete a Mission</button>
+      </form>
+
+      <div id="missionsList">
+        <h2>Missions List</h2>
+        <ul id="missions">
+          <!-- List of missions will be dynamically generated here -->
+        </ul>
+      </div>
+
+
+    </div>
+  </body>
+</html>

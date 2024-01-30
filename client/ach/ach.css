@@ -1,0 +1,66 @@
+.body{
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  
+}
+.achievements {
+  padding: 80px;
+  margin-bottom: 20px;
+  width: 100vw;
+  height: 100vh
+}
+
+h2{
+  font-size: 30px;
+}
+.achievements h2 {
+  margin-top: 0;
+}
+
+.achievements p {
+  margin-bottom: 10px;
+}
+
+
+.achievements ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.achievements li {
+  margin-bottom: 5px;
+}
+#description{
+  font-size: 20px;
+}
+.achievements label {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.achievements input[type="checkbox"] {
+  display: none;
+}
+
+#totalPoints{
+  font-size: 25px;
+}
+
+.achievements input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.achievements input[type="checkbox"]:checked + label:before {
+  
+  font-size: 80px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+}
